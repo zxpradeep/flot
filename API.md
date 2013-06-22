@@ -1101,6 +1101,10 @@ can call:
     setData(newdata), call draw(), and you're good to go. Note that
     for large datasets, almost all the time is consumed in draw()
     plotting the data so in this case don't bother.
+    
+    setData requires array of series objects as parameter. Hence, if 
+    you want to change data points then pass parameter as [d] or
+    [{data:d}]. Where 'd' is array of data points.
 
  - setupGrid()
 
